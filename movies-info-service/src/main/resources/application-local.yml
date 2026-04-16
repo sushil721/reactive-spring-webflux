@@ -1,0 +1,31 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/movies_review_db
+#      host: localhost
+#      port: 27017
+#      database: movies_review_db
+  mongodb:
+    repositories:
+      enabled: true
+    embedded:
+      mongo-servers:
+        - host: localhost
+          port: 27017
+      version: 4.0.2
+  jpa:
+    show-sql: true
+  redis:
+    host: localhost
+    port: 6379
+    #Expire time in minutes
+    cache-expire-time:
+        cache-manager:
+          movies-info-configuration: 60
+
+server:
+  port: 8081
+
+logging:
+  level:
+    root: DEBUG

@@ -1,0 +1,9 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/movies_info_db
+logging:
+  level:
+    root: DEBUG
+server:
+  port: 8082

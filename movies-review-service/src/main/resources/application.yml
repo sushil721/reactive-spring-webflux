@@ -1,0 +1,5 @@
+spring:
+  application:
+    name : movies-info-service
+  profiles:
+    active: local

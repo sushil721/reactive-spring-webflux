@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: movies-service
+  profiles:
+    active: local
+    #  datasource:
+    #    url: jdbc:h2:mem:testdb
+    #    driverClassName: org.h2.Driver
+    #    username: sa
+    #    password: password
+    #  jpa.database-platform: org.hibernate.dialect.H2Dialect
+
+restClient:
+  moviesInfoUrl: http://localhost:8080/v1/movieInfos
+  reviewsUrl: http://localhost:8081/v1/reviews
+
+server:
+  port: 8080
